@@ -1,5 +1,8 @@
 <template>
-    <div id="blog-details" class="blog-details-box center">
+    <div id="blog-details" class="blog-details-box">
+      <div class="banner">
+        <img :src="require('../assets/img/' + banner)" alt="banner_img" class="banner__img">
+      </div>
       <div class="blog-details center">
         <div class="articles-box">
           <article
@@ -152,6 +155,7 @@ export default {
           text: 'Kitchen Planning'
         }
       ],
+      banner: 'blog_details_banner.jpg',
       title: 'Tags',
       isActiveStyle: {
         color: '#fff',
@@ -171,11 +175,18 @@ export default {
 
 <style lang="scss">
 
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 200px;
+}
+
 .blog-details {
   display: flex;
   flex-direction: row;
   gap: 57px;
-  margin-bottom: 60px;
 
   .article-item {
     width: 800px;
@@ -262,7 +273,7 @@ export default {
     align-items: center;
     border-radius: 50px;
     background: #f4f0ec;
-    margin-bottom: 27px;
+    margin-bottom: 96px;
 
     &__text {
       width: 350px;

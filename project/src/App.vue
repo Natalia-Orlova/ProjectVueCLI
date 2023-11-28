@@ -1,16 +1,22 @@
 <template>
   <div id="app">
+    <HeaderComp/>
     <BlogDetails/>
+    <FooterComp/>
   </div>
 </template>
 
 <script>
 import BlogDetails from './components/BlogDetails.vue'
+import HeaderComp from './components/HeaderComp.vue'
+import FooterComp from './components/FooterComp.vue'
 
 export default {
   name: 'App',
   components: {
-    BlogDetails
+    BlogDetails,
+    HeaderComp,
+    FooterComp
   }
 }
 </script>
@@ -18,8 +24,6 @@ export default {
 <style lang="scss">
 #app {
   font-family: Jost, sans-serif;
-  margin-top: 96px;
-  margin-bottom: 96px;
 }
 
 * {
