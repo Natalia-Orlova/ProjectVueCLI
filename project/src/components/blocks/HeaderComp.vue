@@ -3,7 +3,7 @@
     <header id="home" class="header center">
       <div class="header__left">
         <a href="#" class="header__left_logo">
-          <img :src="require('../assets/img/' + logo)" alt="logo"/>
+          <img :src="logo" alt="logo"/>
         </a>
         <a href="#" class="header__left_text">Interno</a>
       </div>
@@ -21,7 +21,7 @@ export default {
 
   data () {
     return {
-      logo: 'header_logo.svg',
+      logo: 'img/header_logo.svg',
       breadcrumbs: ['Home', 'Project', 'Blog']
     }
   },

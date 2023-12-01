@@ -8,10 +8,10 @@
 </template>
 
 <script>
-// import BlogDetails from './components/BlogDetails.vue'
-import HeaderComp from './components/HeaderComp.vue'
-import FooterComp from './components/FooterComp.vue'
-import ProjectsPage from './components/ProjectsPage.vue'
+// import BlogDetails from './components/pages/BlogDetails.vue'
+import HeaderComp from './components/blocks/HeaderComp.vue'
+import FooterComp from './components/blocks/FooterComp.vue'
+import ProjectsPage from './components/pages/ProjectsPage.vue'
 
 export default {
   name: 'App',
