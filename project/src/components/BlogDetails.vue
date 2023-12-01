@@ -1,7 +1,7 @@
 <template>
     <div id="blog-details" class="blog-details-box">
       <div class="banner">
-        <img :src="require('../assets/img/' + banner)" alt="banner_img" class="banner__img">
+        <img :src="banner" alt="banner_img" class="banner__img">
       </div>
       <div class="blog-details center">
         <div class="articles-box">
@@ -14,7 +14,7 @@
             <h2 class="article-item__heading">{{ article.title }}</h2>
             <img
               class="article-item__img"
-              :src="require('../assets/img/' + article.src)"
+              :src="article.src"
               :alt="article.alt"
             />
             <div class="article-item__edition">
@@ -31,7 +31,7 @@
           <div class="quote">
             <img
               class="quote__quotes"
-              src="../assets/img/quotes.svg"
+              src="img/quotes.svg"
               alt="quotes"
             />
             <p class="quote__text">
@@ -67,7 +67,7 @@ export default {
         {
           id: 'kitchen',
           title: 'Let’s Get Solution for Building Construction Work',
-          src: 'blog_details_article.jpg',
+          src: 'img/blog_details_article.jpg',
           alt: 'article_img',
           date: '26 December,2022',
           text1:
@@ -80,7 +80,7 @@ export default {
         {
           id: 'kitchen',
           title: 'Let’s Get Solution for Building Construction Work',
-          src: 'blog_details_article.jpg',
+          src: 'img/blog_details_article.jpg',
           alt: 'article_img',
           date: '26 December,2022',
           text1:
@@ -91,7 +91,7 @@ export default {
         {
           id: 'bedroom',
           title: 'Low Cost Latest Invented Interior Designing Ideas.',
-          src: 'top_photo.jpg',
+          src: 'img/top_photo.jpg',
           alt: 'article_img',
           date: '26 December,2022',
           text1:
@@ -102,7 +102,7 @@ export default {
         {
           id: 'building',
           title: 'Best For Any Office & Business Interior Solution',
-          src: 'news2.jpg',
+          src: 'img/news2.jpg',
           alt: 'article_img',
           date: '26 December,2022',
           text1:
@@ -113,7 +113,7 @@ export default {
         {
           id: 'architecture',
           title: 'Let’s Get Solution for Building Construction Work',
-          src: 'projects2.jpg',
+          src: 'img/projects2.jpg',
           alt: 'article_img',
           date: '26 December,2022',
           text1:
@@ -124,7 +124,7 @@ export default {
         {
           id: 'kitchen-planning',
           title: 'Low Cost Latest Invented Interior Designing Ideas.',
-          src: 'news1.jpg',
+          src: 'img/news1.jpg',
           alt: 'article_img',
           date: '26 December,2022',
           text1:
@@ -155,7 +155,7 @@ export default {
           text: 'Kitchen Planning'
         }
       ],
-      banner: 'blog_details_banner.jpg',
+      banner: 'img/blog_details_banner.jpg',
       title: 'Tags',
       isActiveStyle: {
         color: '#fff',
